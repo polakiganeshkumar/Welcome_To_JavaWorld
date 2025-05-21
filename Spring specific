@@ -41,3 +41,7 @@ have you worked Holder design patten ?
 have you worked on multi-threaded environment? 
 were do we use CompatableFeature class ? 
  
+did you come accross circular design pattern? 
+   - hint -- @Lazy when class A is dependent on B and B is dependent on C and finally C is dependent on A. making a circle then we come across this design pattern.
+   - @lazy is the solution for this problem 
+   - BeanCurrentlyInCreationException.class 
