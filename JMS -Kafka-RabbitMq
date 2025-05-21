@@ -14,3 +14,5 @@ how was scalability handled?
 -- concurrent consumers 
 -- multiple instances
 -- Db optimisation  
+
+why did you migrate from RabbitMQ to Kafka ?
