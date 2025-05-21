@@ -5,3 +5,30 @@ swap this 2 words and make the 2 one capital.
 can i get the first vowels which match the first letter in the string need its index.
 java 8 - find the distinct elements in the string 
 "GaneshPolaki".chars().map(c->(char)c).distinct().forEach(System.out :: PrintLn);
+find the maximum value in an list of elemnts using streams.
+/*
+	 * You need to develop a simple REST API using Spring Boot and JPA that allows
+	 * users to manage a list of employees. The API should support the following
+	 * operations:
+	 *  Add a new employee. 
+	 *  Get the list of all employees. 
+	 *  Get details of  a specific employee by ID. 
+	 *  
+	 *  Update an existing employee.
+	 *  
+	 *   Delete an employee by ID.
+	 *   
+	 *   Each employee should have the following fields: 
+	 *   id (Auto-generated) name
+	 *  (String) email 
+	 *  (String) designation
+	 *   (String) salary 
+	 *   (Double) Requirements:
+	 * 
+	 * Use Spring Boot with Spring MVC and JPA.
+	 *  Store data in an H2 in-memory database.
+	 *  
+	 *  Use RESTful API principles. 
+	 *  
+	 *  Write unit tests using JUnit. has context menu
+	 */
