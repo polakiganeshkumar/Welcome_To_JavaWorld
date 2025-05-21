@@ -1,2 +1,4 @@
 how do you communicate securely  between the services ? 
 rabbit mq annotations and its parallel consumers ? 
+If kafka has multiple partitions then can we scale multiple consumers to it and will it perform better 
+how do you implement kafkaListener?
