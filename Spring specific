@@ -24,3 +24,14 @@ Hints :::
      -- preHandler(HttpRequest request, HttpResponse response, Object headers)
      -- afterCompletion(HttpRequest request, HttpResponse response, Object Headers, Exception ex)
 
+spring batch ? 
+Exception handling
+-- global exception handling. 
+\
+Understand about dispatcher serve-let ?
+What is a servlet ? 
+
+
+what is the difference between spring MVC and spring boot? 
+http is a interface or a protocals? 
+project flow to get all the employee details ? 
