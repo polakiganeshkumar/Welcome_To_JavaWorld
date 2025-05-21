@@ -11,7 +11,6 @@ Answer: Prints the current working directory.
 How do you navigate to the home directory?
 Answer: cd ~ or just cd
 
-2. File/Directory Operations
 How do you create an empty file named test.txt?
 Answer: touch test.txt
 
