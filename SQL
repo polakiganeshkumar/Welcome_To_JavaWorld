@@ -2,3 +2,6 @@ what is the difference between inner and outer join ?
 what is the difference between union and union all ? 
 why do we use merge in oracle application ? 
 have you worked with the stored procedures?
+
+indexes -- CREATE INDEX idx_emp_lastname ON employees(last_name);
+CREATE INDEX fullName_Index ON TableName (column_Name);
