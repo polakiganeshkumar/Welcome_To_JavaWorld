@@ -1,1 +1,6 @@
-
+if you want to update in bulk and don't want change the objects which are existing then, what mapping would you use ? 
+what is the difference between put and post mapping?
+how do u validate a Json request ? 
+   -- for size min 2 and max 3
+   -- it should not be null 
+what is the difference between @RestController and @Controller ?
