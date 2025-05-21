@@ -35,3 +35,9 @@ What is a servlet ?
 what is the difference between spring MVC and spring boot? 
 http is a interface or a protocals? 
 project flow to get all the employee details ? 
+
+how do you make signlton class thread safe? 
+have you worked Holder design patten ?
+have you worked on multi-threaded environment? 
+were do we use CompatableFeature class ? 
+ 
