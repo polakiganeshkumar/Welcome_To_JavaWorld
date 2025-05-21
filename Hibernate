@@ -1,1 +1,23 @@
 why do we use @transient in hibernte?
+hibernate propogation ? 
+hibernate cascading ?
+why do we use cascading in hibernate ? 
+
+Over a two classes who are related as parent and child , 
+if you say @OneToOne(mapping="childClassName", cascade=CascadeType.ALL, )
+
+what are the annotations used in spring boot? -- good.
+real life case of @singleton ? -- good.
+why do we use hibernate @Transactional ? -- commit 
+can we work without using @Transnational annotation ? -- yes we can maintain the session and do the job.
+Hibernate level validations ?
+@NotNull, 
+@Size, ...(min= ? ,max=?)
+@Email
+
+
+hibernate  query level lazy loading  ?
+how do you achieve lazy loading in hibernate on query level ?
+
+@transactional level understanding in hibernate? 
+it is all about the roll back mechanisum of your method or a class 
