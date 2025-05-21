@@ -4,3 +4,23 @@ how do u validate a Json request ?
    -- for size min 2 and max 3
    -- it should not be null 
 what is the difference between @RestController and @Controller ?
+Exception handling ?
+security classes and methods used ?
+what are transactional types in spring? 
+   @Transactional(propagation = Propagation.REQUIRED)-- use existing transactions and if not create on 
+@Transactional(propagation = Propagation.REQUIRES_NEW)
+-- use new transaction everytime you call.
+@Transactional(isolation = Isolation.REPEATABLE_READ)
+-- privents low latancy issues 
+
+circuit breaker design pattern 
+security implementation 
+csrf implemenation 
+
+request interceptor  -- front controller 
+Hints ::: 
+  -- handlerInterseprtor 
+  we need to overide methods 
+     -- preHandler(HttpRequest request, HttpResponse response, Object headers)
+     -- afterCompletion(HttpRequest request, HttpResponse response, Object Headers, Exception ex)
+
