@@ -1,0 +1,42 @@
+ singleton thread safe 
+
+//lazy initialzation 
+public class GreatSingleton{
+
+  private static final instance;
+  
+  private GreatSingleton(){
+  }
+
+  public static  synchronized GreatSingleton getInstance(){
+    if(instance == null){
+      instance=new  GreatSingleton();
+    }
+    return instance; 
+  }
+  
+}
+
+
+//double checked 
+
+public class GreatSingleton{
+
+private static volatile GreatSingleton instance;
+private GreatSingleton()
+}
+
+public static GreatSingleton getInstance(){
+  if(instance == null){ // first check (no locking )
+    synchronized(GreatSingleton.class){
+      if(instance == null){ // secound check (locked)
+        instance=new GreatSingleton();
+      }
+      
+    }
+  }
+  return instance;
+}
+
+
+}
