@@ -26,3 +26,70 @@ ways of creating synchronized hashmap?
 --Collections.synchronized(HashMap<>());
 -- curcurrentHashMap 
 -- Map.of();
+
+why did the implement date API ? 
+poor design.
+years from 1900 and months from 0 .
+old classes were mutable and not thread safe.
+thread safe 
+more specific date and time methods.
+
+optional class and its implementation methods ?
+clear ....
+what is the difference between ofNullable and of() in optional class ? 
+Ans : ofNullable() -- returns optional class if there is null value passed 
+           of() -- returns null if you pass any of the null as an input.
+
+How do you write a lambda expression, how do you call that ?
+code implementation
+@FunctionalInteface 
+Inteface GainKnowledge{
+   public void testMethod();
+}
+
+@FunctionalInteface 
+Inteface KeepGainKnowledge{
+   public void rockItNow(int a, String rockStar);
+}
+
+class Main{
+
+public static void main(String args[]){
+ GainKnowledge gn=()->{
+ System.out.println("This world is so complex to win !!! ");
+}
+
+KeepGainKnowledge kgk=(a,s)->{
+System.out.println( a + S);
+}
+gn.testMethod();
+
+kgk.testMethod(10,"i am a rockstart here !!!!");
+}
+
+}
+
+what is difference between .equals method and hashing method ?
+how do you make a class immutable ? 
+how do we make a class or a method thread safe ? 
+what is volatile in java ? 
+what is try and try with resourse? 
+
+Distinct of object in list of employee ?
+
+
+What is the difference between equals and hashing in Java? 
+
+What are the different ways of creating the a thread? 
+
+What is finally,finalize and final block used ? 
+What is the best way to create a thread ? 
+What is the difference between stream and parallel stream ? 
+Difference between interface and functional interface ? 
+What is a static method in Java ?
+Functional interface before java8 ?
+Why default method in functional interface? 
+Why do we use optional class in Java 8 ? 
+Executor service framework ? 
+
+What’s the difference between shallow copy and deep copy ? 
