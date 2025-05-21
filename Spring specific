@@ -66,3 +66,6 @@ Spring Framework?
 What is Spring DI ?
 advantages of spring  ?
 
+Why @transactional ?
+Why @qualifier ?
+Where do you keep your configuration ? 
