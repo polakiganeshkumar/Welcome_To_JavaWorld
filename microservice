@@ -4,3 +4,8 @@ how do you migrate from  monolithic to a microservice  application?
   -- circuit breaker design pattern 
   -- saga design pattern? 
   
+How do you migrate from monolith to micro service?
+How do you optimise your application?  
+  -- multiple instance to your server? 
+  -- dp optimization? 
+  -- horizontal and vertical scaling
