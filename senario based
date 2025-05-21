@@ -2,3 +2,6 @@ let say you have a request and you are suppose respond with genric response ever
 what will you do when your processing file size more than expected size and how do you handle it? 
 heap memory consumption case ? 
 when do we get out of memory exception in your application ? 
+Multi threading 
+-- how did you implement multi threading in your system.
+-- how do you connect to the data bases in your application.
