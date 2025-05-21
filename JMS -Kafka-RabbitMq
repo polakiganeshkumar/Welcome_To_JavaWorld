@@ -9,3 +9,8 @@ have you integrated rabbitMq WIth JMS ? -- yes  it is possible and can be done w
 
 what is difference between kafka and RabbitMq ? 
 if rabbit-MQ is consumed and will you get any acknowledgement out of it ? 
+
+how was scalability handled?
+-- concurrent consumers 
+-- multiple instances
+-- Db optimisation  
