@@ -1,1 +1,4 @@
 let say you have a request and you are suppose respond with genric response every time a clinet requests and data table columns have to be changed.
+what will you do when your processing file size more than expected size and how do you handle it? 
+heap memory consumption case ? 
+when do we get out of memory exception in your application ? 
