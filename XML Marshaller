@@ -1,3 +1,69 @@
+package com.restcall.RestApi.service;
+import java.io.StringWriter;
+import org.springframework.stereotype.Service;
+import com.restcall.RestApi.model.Book;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Marshaller;
+
+@Service
+public class MarshallService {
+
+	public String getBookAsXML(Book book) {
+		
+		System.out.println(book);
+		
+		StringWriter sw = null;
+		// context or factory creation 
+		JAXBContext context;
+		try {
+			context = JAXBContext.newInstance(Book.class);
+
+		Marshaller marshaller;
+			marshaller = context.createMarshaller();
+		
+		//marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+
+         // 3. Set Marshaller properties (optional, for pretty printing)
+         //marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+			sw=new StringWriter();
+			marshaller.marshal(book, sw);
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+System.out.println(sw.toString());
+         return sw.toString();	
+	}	
+}
+
+==================================================================================================================================
+
+package com.restcall.RestApi.model;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlAttribute;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="book")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Book {
+	
+	@XmlAttribute
+	private long id;
+	@XmlElement(name="bookName")
+	private String bookName;
+	@XmlElement(name="auther")
+	private String auther;
+	@XmlElement(name="bookCost")
+	private long bookCost;
+	@XmlElement(name="publishedYear")
+	private int publishedYear;
+	
+}
+
+==================================================================================================================================
 
 @Data
 @NoArgsConstructor
