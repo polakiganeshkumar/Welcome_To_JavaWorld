@@ -1,0 +1,13 @@
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@XmlRootElement(name = "library")
+@XmlAccessorType(XmlAccessType.FIELD)
+public class Library {
+    @XmlElementWrapper(name = "books")
+    @XmlElement(name = "book")
+    private List<Book> books;
+    @XmlElement(name = "libraryName")
+    private String libraryName;
+}
