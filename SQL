@@ -1,0 +1,2 @@
+what is the difference between inner and outer join ? 
+what is the difference between union and union all ? 
