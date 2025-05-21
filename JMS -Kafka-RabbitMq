@@ -2,3 +2,10 @@ how do you communicate securely  between the services ?
 rabbit mq annotations and its parallel consumers ? 
 If kafka has multiple partitions then can we scale multiple consumers to it and will it perform better 
 how do you implement kafkaListener?
+RabbitMQ .
+how it works  ?
+what are the components you know ? 
+have you integrated rabbitMq WIth JMS ? -- yes  it is possible and can be done watching out the internal protocols and connections might change. 
+
+what is difference between kafka and RabbitMq ? 
+if rabbit-MQ is consumed and will you get any acknowledgement out of it ? 
