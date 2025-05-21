@@ -1,0 +1,146 @@
+1. Basic File System Navigation
+How do you list all files in a directory, including hidden ones?
+Answer: ls -a
+
+How do you change to the parent directory?
+Answer: cd ..
+
+What does pwd do?
+Answer: Prints the current working directory.
+
+How do you navigate to the home directory?
+Answer: cd ~ or just cd
+
+2. File/Directory Operations
+How do you create an empty file named test.txt?
+Answer: touch test.txt
+
+How do you create a directory named projects?
+Answer: mkdir projects
+
+How do you recursively copy a directory?
+Answer: cp -r source_dir destination_dir
+
+How do you rename a file from old.txt to new.txt?
+Answer: mv old.txt new.txt
+
+How do you forcefully delete a directory and its contents?
+Answer: rm -rf dir_name
+
+3. File Permissions & Ownership
+How do you give the owner execute permission on a script?
+Answer: chmod u+x script.sh
+
+How do you change the owner of a file to user1?
+Answer: chown user1 file.txt
+
+What does chmod 755 file.sh do?
+Answer: Owner gets rwx, group and others get r-x.
+
+How do you change the group of a file to developers?
+Answer: chgrp developers file.txt
+
+4. Searching & Finding Files
+How do you find all .log files under /var/log?
+Answer: find /var/log -name "*.log"
+
+How do you search for "error" in all .txt files?
+Answer: grep "error" *.txt
+
+How do you find files modified in the last 7 days?
+Answer: find /path -type f -mtime -7
+
+How do you locate the binary path of python?
+Answer: which python or whereis python
+
+5. System Monitoring & Processes
+How do you list all running processes?
+Answer: ps aux or top
+
+How do you kill a process with PID 1234?
+Answer: kill 1234 (or kill -9 1234 for force kill)
+
+How do you check disk space usage?
+Answer: df -h
+
+How do you check memory usage?
+Answer: free -m
+
+How do you check CPU information?
+Answer: lscpu or cat /proc/cpuinfo
+
+6. Text Processing
+How do you display the first 10 lines of a file?
+Answer: head -10 file.txt
+
+How do you display the last 15 lines of a file?
+Answer: tail -15 file.txt
+
+How do you count lines, words, and characters in a file?
+Answer: wc file.txt
+
+How do you replace "old" with "new" in a file?
+Answer: sed 's/old/new/g' file.txt
+
+7. Networking
+How do you check open ports?
+Answer: netstat -tuln or ss -tuln
+
+How do you ping google.com 5 times?
+Answer: ping -c 5 google.com
+
+How do you check the IP address?
+Answer: ip a or ifconfig (deprecated)
+
+How do you download a file from the internet?
+Answer: wget URL or curl -O URL
+
+8. User & Group Management
+How do you add a new user john?
+Answer: sudo adduser john
+
+How do you add a user to the sudo group?
+Answer: sudo usermod -aG sudo username
+
+How do you list all users?
+Answer: cat /etc/passwd or getent passwd
+
+How do you change a user’s password?
+Answer: passwd username
+
+9. Compression & Archiving
+How do you create a .tar.gz archive?
+Answer: tar -czvf archive.tar.gz /path
+
+How do you extract a .tar.gz file?
+Answer: tar -xzvf archive.tar.gz
+
+How do you zip a directory?
+Answer: zip -r archive.zip /path
+
+10. Advanced Commands
+How do you run a command in the background?
+Answer: Append & (e.g., sleep 60 &)
+
+How do you check command history?
+Answer: history
+
+How do you schedule a job to run daily at 3 AM?
+Answer: crontab -e → 0 3 * * * /path/script.sh
+
+Bonus: Scenario-Based Questions
+A file is taking too much disk space. How do you find the largest files?
+Answer: find / -type f -exec du -h {} + | sort -rh | head -n 10
+
+A service is not starting. How do you check logs?
+Answer: journalctl -u service_name or cat /var/log/syslog
+
+How do you check if a remote server is reachable on port 22?
+Answer: nc -zv hostname 22 or telnet hostname 22
+
+Final Tips:
+Know flags (e.g., -r for recursive, -f for force).
+
+Understand pipes (|) and redirections (>, >>).
+
+Be familiar with Vim (basic editing: i, :wq, :q!).
