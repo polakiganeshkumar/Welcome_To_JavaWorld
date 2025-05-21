@@ -1,0 +1,34 @@
+singleton design pattern 
+prototype design pattern 
+starglor design pattern 
+ACID 
+SOLID 
+saga design pattern 
+MVC design pattern
+Reposetry design pattern (DAO)
+observer design pattern 
+factory design pattern 
+Statergy design pattern 
+  -- over data base design pattern were it helps a web application switching from one data base to another 
+    ie .. oracle to mySQL etc 
+Proxy design apttern  -- AOP 
+circuit breaker 
+retry mechanisum 
+@Service
+public class PaymentService {
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @Retryable(maxAttempts = 3, backoff = @Backoff(delay = 1000))
+    public PaymentResponse charge(PaymentRequest request) {
+        return restTemplate.postForObject(
+            "https://api.payment.com/charge",
+            request,
+            PaymentResponse.class
+        );
+    }
+}
+
+Rate limiting -- Resilience4j
+
+
