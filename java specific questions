@@ -1,4 +1,10 @@
 Time complexity of  list , set and map ?
- what if i write synchronised block inside the method in java, what will happen? 
- difference between collection and list and set ? 
- differnce between list and colletion ? 
+what if i write synchronised block inside the method in java, what will happen? 
+difference between collection and list and set ? 
+differnce between list and colletion ? 
+why do we use optional class in java ? 
+write a completableFuture class implementation ?
+Runnable and callable in java ? 
+what do you know about concurrent hash map?
+why and were do we use flatMap in java ? 
+what is the difference between multi tasking and multi threading ? 
