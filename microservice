@@ -1,1 +1,6 @@
 how do you communicate between the micro-service ?
+how do you migrate from  monolithic to a microservice  application? 
+  -- stangler design patter. 
+  -- circuit breaker design pattern 
+  -- saga design pattern? 
+  
