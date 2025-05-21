@@ -53,5 +53,13 @@ will consumer provide any acknowledgement  producer  produces the message.
 how does angular communicate with your back-end application 
 how is the authentication and authorisation is being handled.
 how was the token handled in this case.
-if rabbit-MQ is consumed and will you get any acknowledgement out of it ? 
+
+how spring initialises the beans into a @Autowired variable ? -- done
+How do you handle Exception in a spring application
+what do you know about springscheduler annotation?
+what are the design patterns you have used in  you application? 
+@CircuitBreaker 
+-- singletone 
+-- prototype 
+
 
