@@ -45,3 +45,13 @@ did you come accross circular design pattern?
    - hint -- @Lazy when class A is dependent on B and B is dependent on C and finally C is dependent on A. making a circle then we come across this design pattern.
    - @lazy is the solution for this problem 
    - BeanCurrentlyInCreationException.class 
+
+@bean creation and its scope 
+singleton implementation 
+what will happen if you have multiple application context.
+will consumer provide any acknowledgement  producer  produces the message.
+how does angular communicate with your back-end application 
+how is the authentication and authorisation is being handled.
+how was the token handled in this case.
+if rabbit-MQ is consumed and will you get any acknowledgement out of it ? 
+
