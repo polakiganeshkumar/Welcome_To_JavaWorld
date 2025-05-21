@@ -3,3 +3,5 @@ student and there subjects in it as a list , now i need to find the maximum scor
 Java 8 Interview question coding :: "ganesh kumar polaki i am working on my self and building". 
 swap this 2 words and make the 2 one capital.
 can i get the first vowels which match the first letter in the string need its index.
+java 8 - find the distinct elements in the string 
+"GaneshPolaki".chars().map(c->(char)c).distinct().forEach(System.out :: PrintLn);
