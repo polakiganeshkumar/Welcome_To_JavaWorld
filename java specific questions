@@ -9,3 +9,20 @@ what do you know about concurrent hash map?
 why and were do we use flatMap in java ? 
 what is the difference between multi tasking and multi threading ? 
 Exception handling ?
+What is the difference between thread.start() and thread.run(). 
+what is a volatile key word?
+what is abstraction ?
+difference between abstract and interface ?
+what is a functional interface ?
+how do we implement functional interface ?
+what is a comparator and comparable ? 
+can we create an object for a abstract class ? 
+explain the steps for involved if i want to add employee class as a key to a map?
+what is serialization ? 
+What is stateless in parallel streams ? 
+what JDK your using currenty? 
+any java 17 or 21 features?  
+ways of creating synchronized hashmap?
+--Collections.synchronized(HashMap<>());
+-- curcurrentHashMap 
+-- Map.of();
