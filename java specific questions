@@ -93,3 +93,5 @@ Why do we use optional class in Java 8 ?
 Executor service framework ? 
 
 What’s the difference between shallow copy and deep copy ? 
+
+ Garbage collection is an automatic memory management process in Java that identifies and reclaims memory from objects that are no longer referenced by the program. It helps prevent memory leaks and ensures efficient memory usage. You can add points about different garbage collection algorithms, such as the generational garbage collector, which divides memory into young and old generations for more efficient processing. You can also mention that the garbage collector runs periodically and automatically, freeing up memory without requiring explicit programmer intervention.
