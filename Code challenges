@@ -37,9 +37,20 @@ find the maximum value in an list of elemnts using streams.
 
   Given a string containing just the characters ‘{’, ‘}’, ‘(’, ’)’, ’[’ and ‘]’, determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Every open bracket has a corresponding close bracket. 
 
+
 Examples: Input: s = “{}” Output: true
 	  Input: s = “(]{}” Output: false
 	  Input: s = “(){}[]” Output: true
 	  Constraints: s consists of parentheses only ‘(){}[]’
+-- morgan stanley 
+
+sql question with the coumn specific 
+finds errors in the code 
+shopping cart example for finding a 
+find 2pow0 of numbers 
+most commun fruit question in java
+hashtable internal implementation
+create a internal mechanisum of a  producer and consumer cases.
+
 
 
