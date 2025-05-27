@@ -1,0 +1,50 @@
+1.   Public vs Private access modifiers
+2.   Static methods vs Instance methods
+3.   Primitive data types vs Objects
+4.   Wrapper classes (Integer, String) vs Primitive types (int, String)
+5.   Array vs List
+6.   Set vs List
+7.   Comparable vs Comparator
+8.   Interface vs Abstract class
+9.   Final vs Static keyword
+10. == vs equals() method
+11. Autoboxing vs Unboxing
+12. Checked exceptions vs Unchecked exceptions
+13. Thread vs Runnable
+14. StringBuilder vs StringBuffer
+15. Synchronized methods vs Synchronized blocks
+16. Abstract class vs Concrete class
+17. Method Overloading vs Method Overriding
+18. Serialization vs Deserialization
+19. HashMap vs TreeMap
+20. ArrayList vs LinkedList
+21. HashMap vs HashTable
+22. Enum vs Constant variables
+23. Singleton pattern vs Prototype pattern
+24. Garbage Collection vs Manual memory management
+25. Lambda expressions vs Anonymous classes
+26. Functional programming vs Object-oriented programming
+27. Try-catch blocks vs finally blocks
+28. Shallow Copy vs Deep Copy
+29. Stack vs Heap Memory Allocation
+30. @SpringBootApplication vs @Configuration
+31. @ComponentScan vs @EnableAutoConfiguration
+32. @Configuration vs @Bean
+33. @Autowired vs @Qualifier
+34. @RestController vs @Controller
+35. @RequestMapping vs @GetMapping
+36. @PathVariable vs @RequestParam
+37. @PostMapping vs @PutMapping
+38. PUT vs PATCH
+39. @ExceptionHandler vs @ControllerAdvice
+40. @Primary vs @Qualifier
+41. @Async vs @Scheduled
+42. @Cacheable vs @CacheEvict
+43. application.properties vs application.yml
+44. Microservices architecture vs Monolithic architecture
+45. JAR vs WAR files
+46. Maven vs Gradle
+47. Continuous Integration vs Continuous Deployment
+48. Agile vs Waterfall methodologies
+49. RESTful API vs SOAP API
+50. Reactive programming vs Imperative programming
