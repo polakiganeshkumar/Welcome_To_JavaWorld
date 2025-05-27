@@ -48,3 +48,24 @@
 48. Agile vs Waterfall methodologies
 49. RESTful API vs SOAP API
 50. Reactive programming vs Imperative programming
+
+
+ 1️⃣ How can you design a thread-safe Singleton pattern in Java? Explain with an example.
+ 2️⃣ When a class implements multiple interfaces with conflicting default methods, how do you resolve the method conflicts? Provide an example.
+ 3️⃣ What is ExecutorService in the Java Executor Framework? How does it enhance thread management?
+ 4️⃣ What are the key differences between the synchronized keyword and ReentrantLock in Java? In which scenarios should you prefer one over the other?
+ 5️⃣ What distinguishes ApplicationContext from BeanFactory in Spring? Describe scenarios where each is more suitable.
+ 6️⃣ How do you handle bean conflicts in a Spring application? What approaches can you use?
+ 7️⃣ When designing a secure REST API using Spring Boot, what essential security measures would you implement? Discuss best practices.
+ 8️⃣ What are your strategies for optimizing the performance of a Spring Boot application? Provide some practical techniques you have used.
+ 9️⃣ What are the core components of a microservices architecture? How do they interact with each other?
+ 🔟 How does service discovery work in a microservices architecture? Explain with examples of service discovery mechanisms.
+ 1️⃣1️⃣ Can you describe a challenging issue you encountered while working with microservices? How did you resolve it?
+ 1️⃣2️⃣ One of your microservices is experiencing a traffic surge, causing performance degradation. What would be your approach to scale this service effectively? What key factors would influence your scaling strategy?
+ 1️⃣3️⃣ How do you ensure data consistency in distributed transactions within a microservices architecture? Explain your approach with examples.
+ 1️⃣4️⃣ What are triggers in a database? Why are they used? Provide an example.
+ 1️⃣5️⃣ Can you demonstrate how to write a parameterized stored procedure in SQL Server?
+ 1️⃣6️⃣ What is SQL Injection? What are the best practices to prevent SQL Injection in a Java Spring Boot application?
+ 1️⃣7️⃣ Can you explain Lazy Loading and Eager Loading in Hibernate? When would you use each approach?
+ 1️⃣8️⃣ What is the N+1 SELECT problem in Hibernate? How can you identify and prevent it in your application?
+
