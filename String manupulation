@@ -1,0 +1,54 @@
+1. Reverse a string by preserving its position. 
+I/p: Hi Welcome O/p: iH emocleW
+
+2.Remove duplicates from string/array/list
+
+3.Longest substring without repeating character.
+I/p:geeksforgeeks O/p:eksforg
+
+4.Find if two strings/numbers are palindrome/not
+
+5.Find if two strings/numbers are anagram/not
+
+6.Sort an array/list/string
+
+7.Count occurrence of characters in a string. 
+I/p: hello World O/p: h-1,e-1,l-3,o-2,w-1,r-1,d-1
+
+8.Print the duplicate character in a string. 
+I/p: hello World O/p: l,o
+
+9.Print only special characters in a string. 
+I/p: hello@34%Wo$rld O/p:@%$
+
+10.Reverse the given string. 
+I/p: hello World O/p: World Hello
+
+11.Print the difference between two strings. 
+I/p: Str1="Have a nice day" str2="Have a good day" O/p: nice, good
+
+12. Count the words in given String
+ I/p: It is a good day O/p:5
+
+13.Second highest element in an array
+ I/p: {5,2,7,1,4,9} O/p: 7
+
+14.Find common elements of 2 array
+ I/p: a1={1,2,3,4,5} a2={4,5,6,7,8} O/p: {4,5}
+
+15. I/p: a2b3c1 O/p:aabbbc
+
+16.Find if given number is prime/not
+ I/p: 3 O/p:prime
+
+17. Fibonacci series
+ I/p: count-5 O/p: 0 1 1 2 3
+
+18. Factorial of a number
+ I/p: 5 O/p:120
+
+19.Find minimum and maximum element in an array
+ I/p: a1={2,5,8,3,1} O/p: min-1 max-8
+
+20.Find the max repeated word in a sentence
+I/p: str1="This is a test.This test is only a test" O/p: test
