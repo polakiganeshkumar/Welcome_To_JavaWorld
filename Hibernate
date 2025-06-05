@@ -1,6 +1,22 @@
 why do we use @transient in hibernte?
 hibernate propogation ? 
+Answers : 
+    REQUIRED (Default): Uses existing transaction or creates new
+    REQUIRES_NEW: Always creates new transaction (suspends current if exists)
+    SUPPORTS: Runs in transaction if exists, otherwise non-transactional
+    NOT_SUPPORTED: Executes non-transactionally (suspends current if exists)
+    MANDATORY: Must run within existing transaction
+    NEVER: Must not run within transaction
+    NESTED: Creates nested transaction if exists.
+
 hibernate cascading ?
+Answers:  
+  PERSIST: Saves child when parent is saved.
+  MERGE: Updates child when parent is updated.
+  REMOVE: Deletes child when parent is deleted.
+  REFRESH: Refreshes child when parent is refreshed.
+  DETACH: Detaches child when parent is detached.
+  ALL: All operations are cascaded.
 why do we use cascading in hibernate ? 
 
 Over a two classes who are related as parent and child , 
