@@ -50,6 +50,32 @@
 50. Reactive programming vs Imperative programming
 
 
+
+ 1️⃣ What is Apache Kafka and why is it used?
+ 2️⃣ What are the main components of Kafka?
+ 3️⃣ What is a Kafka Topic and Partition?
+ 4️⃣ What is a Kafka Broker?
+ 5️⃣ What is a Kafka Consumer Group?
+ 6️⃣ Role of Zookeeper in Kafka
+ 7️⃣ How does Kafka ensure message durability & reliability?
+ 8️⃣ Kafka vs Traditional Messaging Systems
+ 9️⃣ What are delivery semantics: At-most-once, At-least-once, Exactly-once
+ 🔟 How to start a Kafka server locally?
+
+🧠 Beginner-Level Microservices Interview Questions:
+
+ 1️⃣ What are microservices & how are they different from monoliths?
+ 2️⃣ Key characteristics of microservice architecture
+ 3️⃣ API Gateway & Service Discovery explained
+ 4️⃣ How do microservices talk? (REST/gRPC/Kafka)
+ 5️⃣ Configuration management & stateless services
+ 6️⃣ Circuit breaker pattern & Service Registry
+ 7️⃣ Load balancing in microservices
+ 8️⃣ Tools to know: Spring Boot, Docker, Kubernetes
+ 9️⃣ What’s a bounded context?
+ 🔟 Why containers play a major role in microservices
+
+
  1️⃣ How can you design a thread-safe Singleton pattern in Java? Explain with an example.
  2️⃣ When a class implements multiple interfaces with conflicting default methods, how do you resolve the method conflicts? Provide an example.
  3️⃣ What is ExecutorService in the Java Executor Framework? How does it enhance thread management?
