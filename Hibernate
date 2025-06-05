@@ -17,12 +17,27 @@ Answers:
   REFRESH: Refreshes child when parent is refreshed.
   DETACH: Detaches child when parent is detached.
   ALL: All operations are cascaded.
+
 why do we use cascading in hibernate ? 
 
 Over a two classes who are related as parent and child , 
 if you say @OneToOne(mapping="childClassName", cascade=CascadeType.ALL, )
 
 what are the annotations used in spring boot? -- good.
+Answer : application level  --@SpringBootAnnotation -- @ComponantScan, @Configuration, @AutoCongiguratoin.
+configuration level ---    @Configuration 
+                           @Bean
+Controller -- 
+@RestController 
+@RequestBody 
+@PostMapping 
+@GetMapping 
+@PutMapping 
+@RequestParam 
+@Pathvariable
+
+
+
 real life case of @singleton ? -- good.
 why do we use hibernate @Transactional ? -- commit 
 can we work without using @Transnational annotation ? -- yes we can maintain the session and do the job.
