@@ -1,7 +1,13 @@
 let say you have a request and you are suppose respond with genric response every time a clinet requests and data table columns have to be changed.
 what will you do when your processing file size more than expected size and how do you handle it? 
 heap memory consumption case ? 
+--  when you are dealing with heavy data model.
+--  when your dealing with integrations which consume more memory and then it ends up creating more objects.
+--  memory leaks
+
 when do we get out of memory exception in your application ? 
+-- over consumption of all the heap memory .
+
 Multi threading 
 -- how did you implement multi threading in your system.
 -- how do you connect to the data bases in your application.
