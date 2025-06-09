@@ -95,3 +95,25 @@
  1️⃣7️⃣ Can you explain Lazy Loading and Eager Loading in Hibernate? When would you use each approach?
  1️⃣8️⃣ What is the N+1 SELECT problem in Hibernate? How can you identify and prevent it in your application?
 
+1️⃣ Monolith vs Microservices – Key differences 🏗️ vs 🧩 and when to choose which.
+2️⃣ How to design a microservice from scratch 🎨📦
+3️⃣ API Gateway pattern – What it is and why it matters 🔀🔐
+4️⃣ Inter-service communication – REST vs Messaging 🌐✉️
+5️⃣ Circuit Breaker pattern using Resilience4j 🔌⚡
+6️⃣ Load balancing with Spring Cloud Load Balancer ⚖️🌥️
+7️⃣ Centralized config management with Spring Cloud Config 🛠️📁
+8️⃣ Service discovery – Eureka vs Consul 🧭🔍
+9️⃣ Feign Client vs WebClient – Use case comparison 🤝📡
+🔟 Event-driven architecture and Kafka integration 📢🔄
+
+1️⃣1️⃣ Database per service vs Shared Database – Pros & cons 💽🔗
+1️⃣2️⃣ Saga Pattern for managing distributed transactions 🔄📚
+1️⃣3️⃣ JWT-based authentication & OAuth2 in microservices 🛡️🔑
+1️⃣4️⃣ API Gateway security best practices 🔐🚪
+1️⃣5️⃣ Observability: Logging, tracing, monitoring essentials 🔎📊🧵
+1️⃣6️⃣ Prometheus & Grafana for monitoring microservices 📈📉
+1️⃣7️⃣ Kubernetes deployment strategies for microservices 🚢🐳
+1️⃣8️⃣ Blue-Green & Canary deployments – when to use 💙🟩🐤
+1️⃣9️⃣ When to use WebFlux for reactive microservices ⚛️🚀
+2️⃣0️⃣ CQRS & Event Sourcing – where and why to apply 🧠📦🧾
+
