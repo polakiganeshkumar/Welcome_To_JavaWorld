@@ -1,2 +1,2 @@
-how can we deploy your application in the same port ? 
+how can we deploy your application in the same port ? -- need to perform experiment
 if we have 2 application contexts and we create same bean in both of them will there a singleton object created in both of them or only one bean will be created? 
