@@ -13,15 +13,13 @@ Multi threading
 -- how do you connect to the data bases in your application.
 
 working multi threading environment you need to call multiple API's at same time then how would you call that ?
-he was talking about the message queue ,
-i was like a stupid spoke about the thread creation.
 
 External third party call how do you authenticate and how do you write a Rest template call . 
 example code for this.
 
 security measures followed for communicating with third party API's ? 
-error handling and fail safe.
-logging and monitoring.
-using post and put API calls instead of simple  get calls.
-rate limiting and throttling.
-auth with JWT.
+-- error handling and fail safe.
+-- logging and monitoring.
+-- using post and put API calls instead of simple  get calls.
+-- rate limiting and throttling.
+-- auth with JWT.
