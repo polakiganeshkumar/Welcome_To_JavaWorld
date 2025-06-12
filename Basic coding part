@@ -5,12 +5,8 @@
 5. Count the Occurrences of Each Character - done
 6. Reverse Words in a Sentence - done
 7. Check if Two Strings are Anagrams(have same charector in th string) - done
-8. Find the Longest Substring Without Repeating Characters 
-9. Convert a String to an Integer (atoi Implementation) 
 10. Compress a String (Run-Length Encoding) - done
 11. Find the Most Frequent Character - done with java 8
-12. Find All Substrings of a Given String 
-13. Check if a String is a Rotation of Another String 
 14. Remove All White Spaces from a String -- trim()
 18. Convert a String to a Character Array -- tocharArray()
 21. Check if a String Contains Only Digits 
@@ -22,6 +18,10 @@
 
 
 .......................................................................................................
+8. Find the Longest Substring Without Repeating Characters 
+9. Convert a String to an Integer (atoi Implementation) 
+12. Find All Substrings of a Given String 
+13. Check if a String is a Rotation of Another String 
 15. Check if a String is a Valid Shuffle of Two Strings 
 16. Convert a String to Title Case 
 17. Find the Longest Common Prefix 
