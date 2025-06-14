@@ -2,10 +2,20 @@ Visibility And Atomicity
 
 Visibility : is about seeing or getting most up to  date information of any object, while working on a multithreaded environment we end up having the
              we might encounter with stale data if two threads are working symyltaniously.
-      solution is  : volatile key word and synchronized block. 
+             solution is  : volatile key word and synchronized block. 
+Example :
+          private static volatile boolean stopRequested = false;  -- everytime you update resourse. it is intemated to all the other 
+           data threads who are accessing them. 
 
 Atomicity  : is Race condition,
               were we encounter the situation at which two threads might update the same resource incompletly. 
               which might lead to currupted data.
+                Operations as single individual unit. 
+                  using atomic integers and concurrent locks packages..
+
+Example : 
+          
+
+
 
 
