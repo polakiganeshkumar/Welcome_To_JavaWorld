@@ -1,3 +1,17 @@
+Thread
+-------
+start()-- helps the thread to start.
+     run()- internally calls theis method to go further to initate the task;
+joint()-- waits until the thread is fineshed or terminated.
+
+
+
+
+
+
+
+
+
 Visibility And Atomicity
 
 Visibility : is about seeing or getting most up to  date information of any object, while working on a multithreaded environment we end up having the
