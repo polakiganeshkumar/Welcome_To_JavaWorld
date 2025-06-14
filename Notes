@@ -1,10 +1,11 @@
 Visibility And Atomicity
 
-Visibility : is about seeing or getting most up to  daqte information of any object, while working on a multithreaded environment we end up having the
+Visibility : is about seeing or getting most up to  date information of any object, while working on a multithreaded environment we end up having the
              stale data if two threads are working symyltaniously.
       solution is  : volatile key word and synchronized bloack. 
 
 Atomicity  : is Race condition,
               were we encounter the situation at which two threads might update the same resource incompletly. 
               which might lead to currupted data.
-              
+
+
