@@ -5,3 +5,24 @@ have you worked with the stored procedures?
 
 indexes -- CREATE INDEX idx_emp_lastname ON employees(last_name);
 CREATE INDEX fullName_Index ON TableName (column_Name);
+
+1️⃣ How do you find the third highest salary without using TOP or LIMIT?
+2️⃣ How do you remove duplicate rows based on multiple columns?
+3️⃣ What’s the use of the PARTITION BY clause in SQL?
+4️⃣ How do you calculate percentage contribution of each row to a total?
+5️⃣ How do you join three or more tables efficiently?
+6️⃣ How can you retrieve only the latest record per user based on a timestamp?
+7️⃣ What’s the difference between CHAR, VARCHAR, and TEXT?
+8️⃣ How do you handle NULLs in aggregations like AVG, COUNT, or SUM?
+9️⃣ How do you generate a calendar or date dimension using SQL?
+🔟 What’s the impact of indexing on SELECT vs INSERT performance?
+1️⃣1️⃣ How do you retrieve every alternate row from a table?
+1️⃣2️⃣ How can you implement IF-ELSE logic inside a SQL query?
+1️⃣3️⃣ What is normalization and when should you denormalize data instead?
+1️⃣4️⃣ How do you create a running average in SQL?
+1️⃣5️⃣ How do you pivot a table dynamically based on values in a column?
+1️⃣6️⃣ What are the pros and cons of using stored procedures?
+1️⃣7️⃣ How do you filter rows using a value from the previous row in SQL?
+1️⃣8️⃣ What is the difference between a primary key and a unique constraint?
+1️⃣9️⃣ How do you perform a case-insensitive search in SQL?
+2️⃣0️⃣ What techniques do you use to troubleshoot slow-running queries?
