@@ -1,0 +1,9 @@
+Introduction 
+what is the difference between monolith and microservice.
+how do you handle transaction in you application.
+spring bean lifecycle.
+intercommunication between the services?
+what is circuit breaker design pattern?
+challenges faced while working with microservices? 
+how is security handled in your services ? 
+
