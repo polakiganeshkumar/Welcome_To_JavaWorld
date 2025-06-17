@@ -1,1 +1,32 @@
+Exception Handling : 
+
+try
+catch 
+finally 
+
+checked excption 
+unchecked excpetion 
+
+custom exception special catogery.
+can be created in 2 ways 
+-- extending Exception Class -- for checked while complie time.
+   Public class InsufficientFundException extends Exception{
+     public InsufficientFundException(String message){
+      super(message);
+     }
+   }
+-- extending RuntimeException Class -- for runtime No need to check at run time.
+   Public class InvalidAccountException extends RuntimeException{
+     public InvalidAccountException(String message){
+      super(message);
+     }
+   }
+
+
+
+gloabl exception 
+in spring we use a special case were @ControllerAdvice and @ExceptionHandler
+ here @ControlerAdvice is a class level excpetion.
+      @ExceptionHandler in is a method level exception. (it can also accomidate multiple classes at the same time to handle.)
+
 
