@@ -8,6 +8,7 @@ difference between monolith application and microsevice application ?
 what will be the steps for deploying your services ? 
 what will be the steps that we have to find a production issue and solve it in time ? 
 how do you lonch your ec2 instance ?  
-
+how do you configure kafka to your system?
+how do you configutre rabbitMQ to your system?
 
 
