@@ -1,1 +1,12 @@
 Api GATE way:  
+
+we declare a default zone here  so that it can register it self with the discovery server. 
+eureka.client.serviceUri.defaultZone=http://localhost:8761/eureka
+
+
+and we define routes here for navigating to the respected services.
+examples ::
+# product Service Route
+spring.cloud.gateway.routes[0].id=product-service
+spring.cloud.gateway.routes[0].uri=lb://product-service
+spring.cloud.gateway.routes[0].predicates[0]=Path=/api/product
