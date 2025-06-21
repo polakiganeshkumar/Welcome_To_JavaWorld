@@ -1,12 +1,51 @@
 Api GATE way:  
+-> we handle authentication and autherization here. 
+-> loadbanalcing for the services.
+-> rate limiting. 
+-> circuit breaking.
+-> logging.
+-> caching.
+-> API versioning.
+
+Note: we can also put load balancing before api gateway as well. 
 
 we declare a default zone here  so that it can register it self with the discovery server. 
 eureka.client.serviceUri.defaultZone=http://localhost:8761/eureka
 
 
-and we define routes here for navigating to the respected services.
+ we define routes here for navigating to the respected services.
 examples ::
 # product Service Route
-spring.cloud.gateway.routes[0].id=product-service
+spring.cloud.gateway.23routes[0].id=product-service
 spring.cloud.gateway.routes[0].uri=lb://product-service
 spring.cloud.gateway.routes[0].predicates[0]=Path=/api/product
+=========================================================================================================================================
+Load Balancing : 
+-> scalability  
+-> high availability
+
+it relies on the principles like  
+-> round robin.
+-> least Connections.
+-> load based routing.
+
+They are mainly consenerd about the load balancing health of the microservice.
+accordinng to the health the routing is balanced.
+
+how does each microservice have there own load balancing and were is it configured ?
+we have application level load balancer.--configured in application.properties or at application.yml file 
+we have cloud level load balancer.-- configured in terraform.
+
+=========================================================================================================================================
+service registory and discovery server
+dicovery server 
+-- it states that when ever a your applications are up they will register services to the discovery server and it save all the health details of the services.
+--  we use @EnableEurekaServer   euraks load balancing is done this way 
+
+towords the services side :
+ we have to configure this, it will register it self with the server.
+spring.client.serviceUri.defaultZone=http://localhost:8761/eureka
+services while communicating with each other have a temporery cached memoery that stores all the instance data so that it could be fetched and diplayed. 
+
+=========================================================================================================================================
+
