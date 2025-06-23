@@ -1,0 +1,26 @@
+git version controller
+ls -- list of file 
+==================================================================================================================
+-- git status 
+
+to initialize  a git reposetory 
+==================================================================================================================
+ git init 
+
+.git folder has all the information present in it to excecute.
+without it we will not be able to proceed further.
+
+==================================================================================================================
+staging your file : 
+
+git add -- helps for you put you in staging the files.
+For multiple files git add ganesh.html polaki.html kumar.html.
+for all the files git add .
+
+to remove added files in git ? 
+-- git rm --cached file*name.
+============================================================================================================
+
+git commit -m "message 1!!"
+
+  
