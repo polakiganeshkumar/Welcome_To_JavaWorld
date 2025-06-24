@@ -1,3 +1,18 @@
 
 Exception handling 
 -- follow my notes and in git for reffernece explained clearly.
+
+API Versioning ?
+ -- eveolving api safely overtime 
+ -- backword compatable 
+ -- migrate client at there own pace
+==========================================================================================================================
+types : path change ie.. /v1 or /v2 
+        header chnages : ie.. Accept:application/vnd.myapp.v1+json
+                    Ex:
+                       @GetMapping(produces = "application/vnd.myapp.v2+json")
+                         public String getV2() {
+        query parameter : GET /api/users?version=1
+                         public String getUser(@RequestParam("version") String version) {
+                         if ("1".equals(version)) return "User v1";
+==========================================================================================================================
