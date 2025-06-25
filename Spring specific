@@ -84,3 +84,10 @@ types : path change ie.. /v1 or /v2
         query parameter : GET /api/users?version=1
                          public String getUser(@RequestParam("version") String version) {
                          if ("1".equals(version)) return "User v1";
+======================================================================================================================================
+what method would you use for bulk updates in your rest service ? 
+ANS: we have 3 options : 
+    1 -- > PUT -- if you are changing the entire resourse in one go.
+    2 --> POST -- better performance 
+    3 --> PATCH -- for partcial  resourse update.
+======================================================================================================================================
