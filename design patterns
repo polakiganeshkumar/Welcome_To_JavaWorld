@@ -12,7 +12,30 @@ Statergy design pattern
   -- over data base design pattern were it helps a web application switching from one data base to another 
     ie .. oracle to mySQL etc 
 Proxy design apttern  -- AOP 
+======================================================================================================================================================================================================
 circuit breaker   -- (resourse for understanding) https://github.com/akash-coded/spring-framework/discussions/178
+  -- can be implemented in 2 cases : 
+      -- synchronus 
+           -- inter service communication were we can prevent cascading failures, here each service is waiting for other to respond, 
+                 so we can quickly fail and respond with a responce. 
+
+      -- Asynchronus 
+           -- here we mostly communicate with the message queues, working on this queues we can mannage this queue and Re-Queue or redirect it other queues if implemented.
+
+implementation of the circuit breaker should be thoughful considering the casees like 
+-- inter local communication.
+-- multi region implementation.
+-- multi service implemenattion  
+   lets say we have chaining communication between the three services and each of it should have its own implementation of circuit breaker.
+    so that when its failing individually they can have there own failure response and handled.
+
+sates of circuit breaker : 
+==========================
+Closed: The normal state where requests are routed through. If failures reach a certain threshold, the circuit breaker transitions to the open state.
+Open: In this state, requests are not made to the service; instead, a fallback method is invoked. After a predefined "sleep" duration, it transitions to a half-open state to test if the underlying problem is resolved.
+Half-Open: A limited number of requests are allowed through. If these requests are successful, the circuit breaker moves back to the closed state. If not, it returns to the open state. 
+
+
 retry mechanisum 
 @Service
 public class PaymentService {
@@ -28,7 +51,7 @@ public class PaymentService {
         );
     }
 }
-
+======================================================================================================================================================================================================
 Rate limiting -- Resilience4j
 
 
