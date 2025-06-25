@@ -12,7 +12,7 @@ Statergy design pattern
   -- over data base design pattern were it helps a web application switching from one data base to another 
     ie .. oracle to mySQL etc 
 Proxy design apttern  -- AOP 
-circuit breaker 
+circuit breaker   -- (resourse for understanding) https://github.com/akash-coded/spring-framework/discussions/178
 retry mechanisum 
 @Service
 public class PaymentService {
