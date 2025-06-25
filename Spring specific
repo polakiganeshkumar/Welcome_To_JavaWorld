@@ -36,6 +36,7 @@ what is the difference between spring MVC and spring boot?
 http is a interface or a protocals? 
 project flow to get all the employee details ? 
 
+
 how do you make signlton class thread safe? 
 have you worked Holder design patten ?
 have you worked on multi-threaded environment? 
@@ -69,3 +70,17 @@ advantages of spring  ?
 Why @transactional ?
 Why @qualifier ?
 Where do you keep your configuration ? 
+======================================================================================================================================
+API Versioning ?
+ -- eveolving api safely overtime 
+ -- backword compatable 
+ -- migrate client at there own pace
+
+types : path change ie.. /v1 or /v2 
+        header changes : ie.. Accept:application/vnd.myapp.v1+json
+                    Ex:  @GetMapping(produces = "application/vnd.myapp.v2+json")
+                         public String getV2() {
+
+        query parameter : GET /api/users?version=1
+                         public String getUser(@RequestParam("version") String version) {
+                         if ("1".equals(version)) return "User v1";
