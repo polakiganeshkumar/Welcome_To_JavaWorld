@@ -1,0 +1,7 @@
+Difference between iterator and listIterator? 
+
+while iteratoing  on collection iterator has - hasNext() and next() implementation in it.
+ ListIterator has hasPrevious and previous methods in it.
+   -- has nextIndex() and privousIndex methods();
+========================================================================================================
+
