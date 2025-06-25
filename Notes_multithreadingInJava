@@ -5,9 +5,13 @@ start()-- helps the thread to start.
 joint()-- waits until the thread is fineshed or terminated.
 
 
+sleep() -- used to apply temporery hold on the thread and release once the time is up.
+          --> if any interuption occurs it will lead to interupatedExcption occurs
+ eg : notification service example were we give pause for every notification sent to the end user.
 
-
-
+wait() -- thread is put hold for a specific condition, it is realeased by other thread using the methods notify() and notifyAll();
+       -- it is only used inside the synchronized bloack and synchrronized methods.
+ eg : -- needs more clarity on this ???      
 
 
 
@@ -27,7 +31,8 @@ Atomicity  : is Race condition,
                 Operations as single individual unit. 
                   using atomic integers and concurrent locks packages..
 
-Example : 
+Example :  need to get more clarity on this.
+
           
 
 
