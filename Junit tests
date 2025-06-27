@@ -1,1 +1,17 @@
 
+@Test -- upon a method 
+ assertEquals(exp,actual);
+ assertFasle(actual);
+
+@Before
+@After 
+
+@BeforeClass 
+@AfterClass 
+
+@RunWith(Parameterized.class)
+ @Parameters 
+  holds the collections as return 
+
+@RunWith(Suit.class)
+@Suits.SuitClasses({1,2,3....})
