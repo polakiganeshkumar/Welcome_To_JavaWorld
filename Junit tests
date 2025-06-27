@@ -9,9 +9,18 @@
 @BeforeClass 
 @AfterClass 
 
+
 @RunWith(Parameterized.class)
  @Parameters 
-  holds the collections as return 
+   Collection as return type 
 
+ String collectionDate = {{"data","pipe"},{"dataa","pipes"}};
+   holds the collections as return 
+   collections method should always be static 
+   
 @RunWith(Suit.class)
 @Suits.SuitClasses({1,2,3....})
+
+
+-----------------------------
+mockito
