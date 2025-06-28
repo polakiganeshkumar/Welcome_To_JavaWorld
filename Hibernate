@@ -1,8 +1,111 @@
+
+Difference between Hibernate and Jdbc (hibernate vs JDBC)
+ Q2. Session VS Session factory (Differences)
+Q3. Can you create multiple session factory objects? Justify your answer!
+What is the equivalent object of the session in JPA?
+What is persistence context in JPA / Hibernate?
+Explain the first level of caching in Hibernate.
+Justify the difference between get() and load() in Hibernate.
+get method Vs load method [Coding Challenge]
+Explain the transient state in JPA/ Hibernate.
+What is a detached state in hibernate? 
+How to detach an entity object from the persistence state without closing the session?
+Coding challenge on Hibernate states.
+ Why do we need a connection pool? 
+How will you implement connection pooling in your project?
+What are the fetch types available in hibernate? Explain how will you use it in real-time.
+Eagar Vs Lazy code practice 
+What is a @Generated value annotation? Explain the different generation types available in JPA / hibernate.
+Code Practice [Auto Vs Identity Vs Table generation type]
+Explain the advantages of Named queries in hibernate/JPA? 
+What is Criteria API in Hiberante? Explain the advantages.
+@NamedQuery/@NamedQueries quick KT
+Criteria API In Hibernate quick KT[Query/Restrictions /Pagination/Filter demo]connection pooling ? 
+-- no need of creating a new connection every time you fire a query 
+-- we maintain the session at server level not at data base level. 
+
+genric case if you need to swim you will use the existing pool .. you will not construct a new pool for your self.
+  -- vendors or service providers for connection pooling in hibernate.
+  -- Hikari connection pooling -- vendor.
+
+hibernate -- Apache DBCP
+
+-- Data Source is the intercafe which maintains the connection pooling in java.
+
+-- spring driver manager doesnot provide any connection polling facility 
+-- were it comes to hikariDataSourece
+=============================================================================================================================
+fetch type in hibernate?
+-- for one to many and many to many the default fetch type is lazy by default.
+
+@ManyToone and @OneToOne eager in nature 
+@OneToMany, @ManyTOMany -- LAZY
+=============================================================================================================================
+@GenerateValue
+hibernate-- GeneratedValue.AUTO 
+         -- GenerateValue.IDENTITY -- it will verfiy weather data base it is and then generate the sql query for it.
+=============================================================================================================================
+criteria in hibernate ? 
+
+=============================================================================================================================
 why use hibernate/JPA ? 
   -- to be data base egnostic
   -- dilect is responsble for changing the hql query to the SQL native query 
   -- the wraps up the exceptions and make the checked to un checked exception.
+  -- handles catching 
+  -- transactions are handled by anootations provided.
+=======================================================================================================================================================================
+what is the difference between session and session factory?
+-- session factory is heavy weight object and sessoin is light weight object.
+-- session is independent to a single thread and session factory provider to it.
+=======================================================================================================================================================================
+can we create mutiple session factory in hibernate ? 
+-- yes we can create multiple session factory 
+-- when we are having multiple data bases then we have to create each session factory independently for each data bases.
+=======================================================================================================================================================================
+coming to JPA similar methods?
+  EnitiyManager-- session
+-- persist() <<>> save()
+-- merge()  <<>> merge()
+-- delete() <<>> remove()
+-- detach() <<>> evict()
+-- close() <<>> close()
+-- clear() <<>> clear()
+==============================================================================================================================
+hibernate states ?
+ state of objects in hibernate-- 
+ -- detached state.
+ -- persistent.
+ -- detached. 
+ -- removed.
+==============================================================================================================================
+what is first level cache in hibernate? 
+-- so you have student object 
+     Student student=new Student("Yash");
+     sessoin.save(student);
 
+      lets say we are changing the name multiple times
+    -- student.setName("ajay"); -- this will be working on copy of the object.
+    -- student.setName("polaki");-- this will be working on copy of the object. 
+    -- student.setName("kumar"); -- at last it compare with the first saved object and if they are not same then it changes it, with the last object and move further.
+
+persistance context is a mechanisum were it acts as first level cache -- so it hold the state of the object when the final commit is done.
+session is the persistance context.
+======================================================================================================================================================================
+what is the difference between get and load methods in hibernate?
+get() -- it is said to be eager loaded object when ever called and not even used.
+Song song = session.get(Song.class,1);-- song is equiped with the object.
+
+load()  -- it is said to be lazy loaded we can also say that is a proxy of the object created for performance.
+Song song = session.load(Song.class,1);-- song is equiped with proxy.
+
+if the objects are not present then you might get null pointer for get call.
+           you might experiance object no found for load-- method call.
+
+System.out.println(song.getName());-- under this line we have the object loaded  
+ which internally follows proxy design pattern.
+
+======================================================================================================================================================================
 expalin N+1 problem in hibernate? 
 
 : excution of N+1 number of quries while using hibernate is defined as N+1 problem in hibernate. 
