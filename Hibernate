@@ -1,3 +1,8 @@
+why use hibernate/JPA ? 
+  -- to be data base egnostic
+  -- dilect is responsble for changing the hql query to the SQL native query 
+  -- the wraps up the exceptions and make the checked to un checked exception.
+
 expalin N+1 problem in hibernate? 
 
 : excution of N+1 number of quries while using hibernate is defined as N+1 problem in hibernate. 
