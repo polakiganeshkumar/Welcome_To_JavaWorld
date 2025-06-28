@@ -61,7 +61,7 @@ why use hibernate/JPA ?
   -- to be data base egnostic
   -- dilect is responsble for changing the hql query to the SQL native query 
   -- the wraps up the exceptions and make the checked to un checked exception.
-  -- handles catching 
+  -- handles caching 
   -- transactions are handled by anootations provided.
 =======================================================================================================================================================================
 what is the difference between session and session factory?
