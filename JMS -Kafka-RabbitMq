@@ -1,7 +1,16 @@
 how do you communicate securely  between the services ? 
+-- pre configures 
+-- ssl based authentication 
+-- serialization and deserialization.
+===========================================================================================================================================================
 rabbit mq annotations and its parallel consumers ? 
-If kafka has multiple partitions then can we scale multiple consumers to it and will it perform better 
+
+===========================================================================================================================================================
+If kafka has multiple partitions then can we scale multiple consumers to it and will it perform better ?
+
+===========================================================================================================================================================
 how do you implement kafkaListener?
+===========================================================================================================================================================
 RabbitMQ .
 how it works  ?
 what are the components you know ? 
