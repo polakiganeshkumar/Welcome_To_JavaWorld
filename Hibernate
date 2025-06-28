@@ -8,10 +8,12 @@ this is arised  : two entities ie.. Employee and  department related to each oth
                                    according to the result have n number of rows then, n number of quries are excuted here.
                                     addition of this N+1(first query) is the problem .
 
+Solution 1:
  To slove this issue, we can use : select id,name, .... from department d  Join Fetch d.listOfEmployee;
  here internally : select dp.id , dp.name, emp.name, emp.id from  department left join employee on dl.id=emp.id;
 
-solution 2 : at reposetory level we can have a annotation as @EnityGraph(attributePaths="addresses").
+solution 2 : 
+At reposetory level we can have a annotation as @EnityGraph(attributePaths="addresses").
 
 =======================================================================================================================================================================
 do you know  hibernate does not support lazy loading for @Onetoone relationship.?
