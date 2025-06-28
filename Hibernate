@@ -71,9 +71,5 @@ Hibernate level validations ?
 @Size, ...(min= ? ,max=?)
 @Email
 
-
-hibernate  query level lazy loading  ?
-how do you achieve lazy loading in hibernate on query level ?
-
 @transactional level understanding in hibernate? 
 it is all about the either commit or roll back mechanisum of your method or a class 
