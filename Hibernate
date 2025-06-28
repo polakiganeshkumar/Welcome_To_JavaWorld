@@ -20,7 +20,10 @@ Code Practice [Auto Vs Identity Vs Table generation type]
 Explain the advantages of Named queries in hibernate/JPA? 
 What is Criteria API in Hiberante? Explain the advantages.
 @NamedQuery/@NamedQueries quick KT
-Criteria API In Hibernate quick KT[Query/Restrictions /Pagination/Filter demo]connection pooling ? 
+Criteria API In Hibernate quick KT[Query/Restrictions /Pagination/Filter demo]
+
+=============================================================================================================================
+connection pooling ? 
 -- no need of creating a new connection every time you fire a query 
 -- we maintain the session at server level not at data base level. 
 
@@ -29,11 +32,17 @@ genric case if you need to swim you will use the existing pool .. you will not c
   -- Hikari connection pooling -- vendor.
 
 hibernate -- Apache DBCP
-
+=============================================================================================================================
 -- Data Source is the intercafe which maintains the connection pooling in java.
 
 -- spring driver manager doesnot provide any connection polling facility 
 -- were it comes to hikariDataSourece
+
+=============================================================================================================================
+what is lazy initilaization exception in hibernate 
+-- when ever an object is present in detached state?
+-- when ever the objects are out of @Transactional boundery? 
+
 =============================================================================================================================
 fetch type in hibernate?
 -- for one to many and many to many the default fetch type is lazy by default.
