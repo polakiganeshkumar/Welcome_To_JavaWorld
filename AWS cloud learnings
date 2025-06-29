@@ -62,10 +62,22 @@ asia pecific
 north america :
 -- new york, NY
 -- newark, NJ 
-
-
 =========================================================================================================================================================
+AWS BeanStack .
+-- elb is in-bulid handleded. 
+-- creates an auto scaling group.
+-- creates an ec2 instances.
+-- creates a target group and maps them to elb and with ec2 instances.
+-- hold minimun instances, carries maximum instances to load and balance.
 =========================================================================================================================================================
+Aws Lamda function.
+-- allows to load funstion when nessary.
+-- need not worry about scaling.
+-- avilabilty 
+--   you pay for -
+       > number of requests
+       > duration of request
+       > memory consumed.
 
 =========================================================================================================================================================
 =========================================================================================================================================================
