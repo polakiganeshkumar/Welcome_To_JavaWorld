@@ -1,12 +1,14 @@
+criteria in hibernate ? 
+
+
 
 Difference between Hibernate and Jdbc (hibernate vs JDBC)
- Q2. Session VS Session factory (Differences)
+Q2. Session VS Session factory (Differences)
 Q3. Can you create multiple session factory objects? Justify your answer!
 What is the equivalent object of the session in JPA?
 What is persistence context in JPA / Hibernate?
 Explain the first level of caching in Hibernate.
 Justify the difference between get() and load() in Hibernate.
-get method Vs load method [Coding Challenge]
 Explain the transient state in JPA/ Hibernate.
 What is a detached state in hibernate? 
 How to detach an entity object from the persistence state without closing the session?
@@ -31,9 +33,9 @@ genric case if you need to swim you will use the existing pool .. you will not c
   -- vendors or service providers for connection pooling in hibernate.
   -- Hikari connection pooling -- vendor.
 
-hibernate -- Apache DBCP
+hibernate -- Apache DBCP// D3PO
 =============================================================================================================================
--- Data Source is the intercafe which maintains the connection pooling in java.
+-- Data Source is the interface which maintains the connection pooling in java.
 
 -- spring driver manager doesnot provide any connection polling facility 
 -- were it comes to hikariDataSourece
@@ -53,9 +55,6 @@ fetch type in hibernate?
 @GenerateValue
 hibernate-- GeneratedValue.AUTO 
          -- GenerateValue.IDENTITY -- it will verfiy weather data base it is and then generate the sql query for it.
-=============================================================================================================================
-criteria in hibernate ? 
-
 =============================================================================================================================
 why use hibernate/JPA ? 
   -- to be data base egnostic
@@ -131,7 +130,7 @@ Solution 1:
 
 solution 2 : 
 At reposetory level we can have a annotation as @EnityGraph(attributePaths="addresses").
-
+be paticular with the commands.
 =======================================================================================================================================================================
 do you know  hibernate does not support lazy loading for @Onetoone relationship.?
 =======================================================================================================================================================================
@@ -157,6 +156,8 @@ Answers:
   REFRESH: Refreshes child when parent is refreshed.
   DETACH: Detaches child when parent is detached.
   ALL: All operations are cascaded.
+
+example and understanding.
 
 =======================================================================================================================================================================
 why do we use cascading in hibernate ? 
