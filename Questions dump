@@ -1,119 +1,113 @@
-1.   Public vs Private access modifiers
-2.   Static methods vs Instance methods
-3.   Primitive data types vs Objects
-4.   Wrapper classes (Integer, String) vs Primitive types (int, String)
-5.   Array vs List
-6.   Set vs List
-7.   Comparable vs Comparator
-8.   Interface vs Abstract class
-9.   Final vs Static keyword
-10. == vs equals() method
-11. Autoboxing vs Unboxing
-12. Checked exceptions vs Unchecked exceptions
-13. Thread vs Runnable
-14. StringBuilder vs StringBuffer
-15. Synchronized methods vs Synchronized blocks
-16. Abstract class vs Concrete class
-17. Method Overloading vs Method Overriding
-18. Serialization vs Deserialization
-19. HashMap vs TreeMap
-20. ArrayList vs LinkedList
-21. HashMap vs HashTable
-22. Enum vs Constant variables
-23. Singleton pattern vs Prototype pattern
-24. Garbage Collection vs Manual memory management
-25. Lambda expressions vs Anonymous classes
-26. Functional programming vs Object-oriented programming
-27. Try-catch blocks vs finally blocks
-28. Shallow Copy vs Deep Copy
-29. Stack vs Heap Memory Allocation
-30. @SpringBootApplication vs @Configuration
-31. @ComponentScan vs @EnableAutoConfiguration
-32. @Configuration vs @Bean
-33. @Autowired vs @Qualifier
-34. @RestController vs @Controller
-35. @RequestMapping vs @GetMapping
-36. @PathVariable vs @RequestParam
-37. @PostMapping vs @PutMapping
-38. PUT vs PATCH
-39. @ExceptionHandler vs @ControllerAdvice
-40. @Primary vs @Qualifier
-41. @Async vs @Scheduled
-42. @Cacheable vs @CacheEvict
-43. application.properties vs application.yml
-44. Microservices architecture vs Monolithic architecture
-45. JAR vs WAR files
-46. Maven vs Gradle
-47. Continuous Integration vs Continuous Deployment
-48. Agile vs Waterfall methodologies
-49. RESTful API vs SOAP API
-50. Reactive programming vs Imperative programming
+1. Can we use a static method in a constructor?
+2. What is the contract between hashCode() and equals() methods?
+3. What is fail-fast iteration, and how do we resolve it?
+4. What are virtual threads?
+5. What are sealed classes?
+6. What happens when there is a collision in HashMap?
+7. What is multithreading? How is multithreading implemented in your project?
+8. What is NullPointerException, and how is it handled?
+9. Array vs List
+10. Set vs List
+11. Checked exceptions vs Unchecked exceptions
+12. Thread vs Runnable
+13. Abstract class vs Concrete class
+14. HashMap vs TreeMap
+15. ArrayList vs LinkedList
+16. HashMap vs HashTable
+17. Enum vs Constant variables
+18. Garbage Collection vs Manual memory management
+19. Lambda expressions vs Anonymous classes
+20. Functional programming vs Object-oriented programming
+21. Shallow Copy vs Deep Copy
 
+Java Concurrency & Design Patterns
+22. How can you design a thread-safe Singleton pattern in Java? Explain with an example.
+23. What is ExecutorService in the Java Executor Framework? How does it enhance thread management?
+24. Key differences between synchronized and ReentrantLock in Java? When to use each?
+25. When a class implements multiple interfaces with conflicting default methods, how do you resolve the method conflicts?
 
+Spring Framework & Spring Boot
+26. What distinguishes ApplicationContext from BeanFactory in Spring?
+27. How do you handle bean conflicts in a Spring application?
+28. @RequestMapping vs @GetMapping
+29. @PathVariable vs @RequestParam
+30. @PostMapping vs @PutMapping
+31. @Async vs @Scheduled
+32. @Cacheable vs @CacheEvict
+33. application.properties vs application.yml
+34. How to handle "Service Not Found" error even when beans are properly registered?
+35. DB @Bean vs @Autowired
 
- 1️⃣ What is Apache Kafka and why is it used?
- 2️⃣ What are the main components of Kafka?
- 3️⃣ What is a Kafka Topic and Partition?
- 4️⃣ What is a Kafka Broker?
- 5️⃣ What is a Kafka Consumer Group?
- 6️⃣ Role of Zookeeper in Kafka
- 7️⃣ How does Kafka ensure message durability & reliability?
- 8️⃣ Kafka vs Traditional Messaging Systems
- 9️⃣ What are delivery semantics: At-most-once, At-least-once, Exactly-once
- 🔟 How to start a Kafka server locally?
+Microservices Architecture
+36. What are microservices, and how are they different from monoliths?
+37. Key characteristics of microservice architecture
+38. API Gateway & Service Discovery explained
+39. How do microservices communicate? (REST/gRPC/Kafka)
+40. Configuration management & stateless services
+41. Circuit breaker pattern & Service Registry
+42. Load balancing in microservices
+43. Tools to know: Spring Boot, Docker, Kubernetes
+44. What is a bounded context?
+45. Why containers play a major role in microservices
+46. How to design a microservice from scratch
+47. Inter-service communication – REST vs Messaging
+48. Circuit Breaker pattern using Resilience4j
+49. Load balancing with Spring Cloud Load Balancer
+50. Centralized config management with Spring Cloud Config
+51. Service discovery – Eureka vs Consul
+52. Feign Client vs WebClient – Use case comparison
+53. Event-driven architecture and Kafka integration
+54. Database per service vs Shared Database – Pros & cons
+55. Saga Pattern for managing distributed transactions
+56. JWT-based authentication & OAuth2 in microservices
+57. API Gateway security best practices
+58. Observability: Logging, tracing, monitoring essentials
+59. Prometheus & Grafana for monitoring microservices
+60. Kubernetes deployment strategies for microservices
+61. Blue-Green & Canary deployments – when to use
+62. When to use WebFlux for reactive microservices
+63. CQRS & Event Sourcing – where and why to apply
 
-🧠 Beginner-Level Microservices Interview Questions:
+Kafka
+64. What is Apache Kafka, and why is it used?
+65. What are the main components of Kafka?
+66. What is a Kafka Topic and Partition?
+67. What is a Kafka Broker?
+68. What is a Kafka Consumer Group?
+69. Role of Zookeeper in Kafka
+70. How does Kafka ensure message durability & reliability?
+71. Kafka vs Traditional Messaging Systems
+72. What are delivery semantics: At-most-once, At-least-once, Exactly-once
+73. How to start a Kafka server locally?
+74. How to handle if a consumer keeps failing?
 
- 1️⃣ What are microservices & how are they different from monoliths?
- 2️⃣ Key characteristics of microservice architecture
- 3️⃣ API Gateway & Service Discovery explained
- 4️⃣ How do microservices talk? (REST/gRPC/Kafka)
- 5️⃣ Configuration management & stateless services
- 6️⃣ Circuit breaker pattern & Service Registry
- 7️⃣ Load balancing in microservices
- 8️⃣ Tools to know: Spring Boot, Docker, Kubernetes
- 9️⃣ What’s a bounded context?
- 🔟 Why containers play a major role in microservices
+Databases & Hibernate
+75. What are triggers in a database? Why are they used?
+76. How to write a parameterized stored procedure in SQL Server?
+77. What is SQL Injection? Best practices to prevent it in Spring Boot?
+78. Lazy Loading vs Eager Loading in Hibernate – When to use each?
 
+Testing & Mocking
+79. What is @Mockito?
+80. When and when not to use @Mock?
 
- 1️⃣ How can you design a thread-safe Singleton pattern in Java? Explain with an example.
- 2️⃣ When a class implements multiple interfaces with conflicting default methods, how do you resolve the method conflicts? Provide an example.
- 3️⃣ What is ExecutorService in the Java Executor Framework? How does it enhance thread management?
- 4️⃣ What are the key differences between the synchronized keyword and ReentrantLock in Java? In which scenarios should you prefer one over the other?
- 5️⃣ What distinguishes ApplicationContext from BeanFactory in Spring? Describe scenarios where each is more suitable.
- 6️⃣ How do you handle bean conflicts in a Spring application? What approaches can you use?
- 7️⃣ When designing a secure REST API using Spring Boot, what essential security measures would you implement? Discuss best practices.
- 8️⃣ What are your strategies for optimizing the performance of a Spring Boot application? Provide some practical techniques you have used.
- 9️⃣ What are the core components of a microservices architecture? How do they interact with each other?
- 🔟 How does service discovery work in a microservices architecture? Explain with examples of service discovery mechanisms.
- 1️⃣1️⃣ Can you describe a challenging issue you encountered while working with microservices? How did you resolve it?
- 1️⃣2️⃣ One of your microservices is experiencing a traffic surge, causing performance degradation. What would be your approach to scale this service effectively? What key factors would influence your scaling strategy?
- 1️⃣3️⃣ How do you ensure data consistency in distributed transactions within a microservices architecture? Explain your approach with examples.
- 1️⃣4️⃣ What are triggers in a database? Why are they used? Provide an example.
- 1️⃣5️⃣ Can you demonstrate how to write a parameterized stored procedure in SQL Server?
- 1️⃣6️⃣ What is SQL Injection? What are the best practices to prevent SQL Injection in a Java Spring Boot application?
- 1️⃣7️⃣ Can you explain Lazy Loading and Eager Loading in Hibernate? When would you use each approach?
- 1️⃣8️⃣ What is the N+1 SELECT problem in Hibernate? How can you identify and prevent it in your application?
+DevOps & CI/CD
+81. How to debug in local and remote repositories?
+82. How to create a pipeline and deploy in Jenkins?
+83. JAR vs WAR files
+84. Maven vs Gradle
+85. Continuous Integration vs Continuous Deployment
 
-1️⃣ Monolith vs Microservices – Key differences 🏗️ vs 🧩 and when to choose which.
-2️⃣ How to design a microservice from scratch 🎨📦
-3️⃣ API Gateway pattern – What it is and why it matters 🔀🔐
-4️⃣ Inter-service communication – REST vs Messaging 🌐✉️
-5️⃣ Circuit Breaker pattern using Resilience4j 🔌⚡
-6️⃣ Load balancing with Spring Cloud Load Balancer ⚖️🌥️
-7️⃣ Centralized config management with Spring Cloud Config 🛠️📁
-8️⃣ Service discovery – Eureka vs Consul 🧭🔍
-9️⃣ Feign Client vs WebClient – Use case comparison 🤝📡
-🔟 Event-driven architecture and Kafka integration 📢🔄
+Web & HTTP Concepts
+86. What is Authentication vs Authorization?
+87. What are HTTP error codes: 404, 402, 502, 503, 401?
+88. What is the issue behind "Bad Request" error?
+89. How to handle Gateway Timeout and Service Unavailable errors?
+90. RESTful API vs SOAP API
 
-1️⃣1️⃣ Database per service vs Shared Database – Pros & cons 💽🔗
-1️⃣2️⃣ Saga Pattern for managing distributed transactions 🔄📚
-1️⃣3️⃣ JWT-based authentication & OAuth2 in microservices 🛡️🔑
-1️⃣4️⃣ API Gateway security best practices 🔐🚪
-1️⃣5️⃣ Observability: Logging, tracing, monitoring essentials 🔎📊🧵
-1️⃣6️⃣ Prometheus & Grafana for monitoring microservices 📈📉
-1️⃣7️⃣ Kubernetes deployment strategies for microservices 🚢🐳
-1️⃣8️⃣ Blue-Green & Canary deployments – when to use 💙🟩🐤
-1️⃣9️⃣ When to use WebFlux for reactive microservices ⚛️🚀
-2️⃣0️⃣ CQRS & Event Sourcing – where and why to apply 🧠📦🧾
+Advanced Concepts
+91. Reactive programming vs Imperative programming
+92. How to ensure data consistency in distributed transactions in microservices?
+93. What was a challenging issue you faced in microservices, and how did you resolve it?
+94. How would you scale a microservice under traffic surge?
 
