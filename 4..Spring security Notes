@@ -1,0 +1,18 @@
+Spring security 3+ 
+
+authentication 
+autherization 
+
+HttpSecurity http
+-- csrf disbaled().
+
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http
+                .authorizeHttpRequests(authorize -> authorize.anyRequest().permitAll()
+                    .requestMatchers("/api/admin/**").hasRole("ADMIN") // Only ADMIN can access
+                   .requestMatchers("/api/user/**").hasAnyRole("USER", "ADMIN") // USER or ADMIN)
+                .csrf(csrf -> csrf.disable()) // Disable CSRF
+                .build();
+    }
