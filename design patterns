@@ -14,6 +14,34 @@ Statergy design pattern
 Proxy design apttern  -- AOP 
 ======================================================================================================================================================================================================
 circuit breaker   -- (resourse for understanding) https://github.com/akash-coded/spring-framework/discussions/178
+
+CODE :: 
+resilience4j.circuitbreaker:
+  instances:
+    productCatalog:
+      failureRateThreshold: 50
+      waitDurationInOpenState: 5000
+      ringBufferSizeInHalfOpenState: 5
+      ringBufferSizeInClosedState: 10
+
+---------------
+@Service
+public class TransactionService {
+    // ...
+
+    @CircuitBreaker(name = "creditScoreService", fallbackMethod = "fallbackCreditScore")
+    public CreditScore getCreditScore(Customer customer) {
+        // Call to External Credit Score Service
+    }
+
+    private CreditScore fallbackCreditScore(Customer customer, Throwable t) {
+        // Fallback logic
+    }
+}
+
+------------------------------------------------
+
+
   -- can be implemented in 2 cases : 
       -- synchronus 
            -- inter service communication were we can prevent cascading failures, here each service is waiting for other to respond, 
