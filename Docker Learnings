@@ -1,3 +1,51 @@
 https://cognizant.udemy.com/course/docker-for-beginners-j/learn/lecture/40884150#overview
 
+Docker is used for containerization.
+-- add all your softwares into one place and transfer the image.
+
+docker Image  -- blue print of a 
+-- it is light weight file of your running container.
+
+docker image
+------------
+-- it gives all the images which are present.
+
+docker ps 
+---------
+-- it gives all the running images which are running 
+
+docker ps -a 
+-------------
+-- it gives all the images existing.
+
+docker help 
+-----------
+-- gives all the commands needed.
+
+docker rm ID(needs container Id)
+
+docker rmi ID(needs  Image Id).
+
+docker search 
+------------- 
+to search the images which has to be pulled.
+
+docker pull 
+-----------
+to pull images them from docker hub.
+
+docker create 
+-------------
+
+
+docker start
+-------------
+
+
+steps  : docker -- search (name) -> pull (name) -> create (UseId) -> start (UseId).  also stop  (UseId): 
+
+we can also puase : docker pause (use-Id) : 
+
+
+
 
