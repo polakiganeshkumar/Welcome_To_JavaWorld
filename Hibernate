@@ -82,6 +82,7 @@ coming to JPA similar methods?
 ==============================================================================================================================
 hibernate states ?
  state of objects in hibernate-- 
+ -- transient 
  -- detached state.
  -- persistent.
  -- detached. 
