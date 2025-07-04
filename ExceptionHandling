@@ -1,5 +1,7 @@
 Exception Handling : 
 
+differnce between classNotFoundException and noClassDefError(similar to noBeanDefinationException in spring.)
+
 try
 catch 
 finally 
