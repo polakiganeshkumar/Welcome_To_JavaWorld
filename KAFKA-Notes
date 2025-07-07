@@ -1,0 +1,76 @@
+streaming platform.
+
+
+-- scalabilty -- heavy traffic tolerence 
+-- fault tolerance -- backups using brokers
+-- durablility -- multiple consumers 
+-- realtime stream processing (Logs) -- order maintaining 
+-- pratitioning -- 
+-- high throughput.
+-- community and support.
+
+
+
+for large amount of data in paticular order.
+for loging your application logs at paticular place we use kafka.
+
+ISR -- In sync replicas.
+
+cosumer :
+-- acknoledgemrnt 
+-- commit of offset.
+
+High level :
++-----------------------------------------------------------------------+
+|                           Kafka Cluster                               |
+|                                                                       |
+|  +-------------+       +------------+        +-------------+         |
+|  |  Producer   | ----> |   Broker   | <----  |  Consumer   |         |
+|  +-------------+       +------------+        +-------------+         |
+|                                     |                                |
+|  +-------------+                    |        +-------------+         |
+|  |  Producer   | -------------------|----->  |  Consumer   |         |
+|  +-------------+                    |        +-------------+         |
+|                                     |                                |
+|  +-------------+                    |                                |
+|  |  Zookeeper  | <------------------|                                |
+|  +-------------+       (Manages cluster metadata)                    |
++-----------------------------------------------------------------------+
+
+Topis : 
++---------------------+
+|      Topic: "logs"  |
+|  (Partitioned)      |
++---------------------+
+| Partition 0 | Partition 1 | Partition 2 |
+| (Leader:    | (Leader:    | (Leader:    |
+|  Broker 1)  |  Broker 2)  |  Broker 3)  |
++-------------+-------------+-------------+
+| Offset 0    | Offset 0    | Offset 0    |
+| Offset 1    | Offset 1    | Offset 1    |
+| ...         | ...         | ...         |
++----------------------------------------+
+
+producer :
++-------------------+      +-------------------+      +-------------------+
+|                   |      |                   |      |                   |
+|  Producer App     | -->  |  Partitioner      | -->  |  Kafka Broker     |
+|  (e.g., Web App)  |      | (Assigns to       |      |  (Leader for      |
+|                   |      |  Partition)       |      |   Partition)      |
++-------------------+      +-------------------+      +-------------------+
+                                      |
+                                      v
+                          (Optional: Acks=1/all for durability)
+
+
+consumer :
++-------------------+      +-------------------+      +-------------------+
+|                   |      |                   |      |                   |
+|  Consumer Group   | -->  |  Partition        | -->  |  Kafka Broker     |
+|  (e.g., "Group1") |      |  Assignment       |      |  (Reads from      |
+|                   |      | (Balanced across  |      |   Partition)      |
+|                   |      |  group members)   |      |                   |
++-------------------+      +-------------------+      +-------------------+
+                                      |
+                                      v
+                          (Commits offsets to __consumer_offsets)
