@@ -1,1 +1,7 @@
+learn project reactor.
 
+tomcat allocates single thread per request -- it is a primeryly a blocking server.
+
+spring web flux uses a netty server and has a full async support.
+
+https://www.youtube.com/watch?v=-AnAd7rR2Qk&list=PL3NrzZBjk6m-RrIn2ndllgEnIHpOmz2v3&index=2
